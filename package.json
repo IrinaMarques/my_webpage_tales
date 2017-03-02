@@ -1,0 +1,14 @@
+{
+  "name": "my_webdesign_tales",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "liveon": "cd public && live-server --watch=**/* --open=index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  }
+}

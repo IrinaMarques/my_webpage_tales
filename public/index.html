@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Fantastic Tales - Scary Tales</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<div class='wrap'>
+		<!-- por toggle e tirar para ver os estilos -->
+		<header role='banner' class='header-bar'> 
+			<div class='hamburguer'>
+				<button id='burger' type='button' class='menu-mobile-btn'> 
+					<span class='hamburguer-bar'></span>
+					<span class='hamburguer-bar'></span>
+					<span class='hamburguer-bar'></span>
+				</button>
+			</div> 
+			
+			<nav id='burger-menu' role='navigation' class='menu menu-mobile-open'>
+				<ul class='menu-items'>
+					<li><a href="#">Work</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Tales</a></li>
+					<li><a href="#">Contacts</a></li>
+				</ul>
+			</nav> 
+		</header>
+
+		<section class='landing-title viewport100'>	
+			<div class='title'>
+				<h1>Fantastic Tales</h1>
+				<h1>Scary Tales</h1>
+			</div>
+			<div class='landing-footer'>
+				<p>Tales</p>
+				<!-- ICON -->
+			</div>
+		</section>	
+
+
+		<section class='tales viewport100'>
+			
+		</section>
+	</div> <!-- end of wrap -->
+
+	<script>
+		var burger = document.getElementById('burger');
+		var burgerMenu = document.getElementById('burger-menu');
+
+		burger.addEventListener("click", function(){
+			var className = burgerMenu.className;
+
+			if(className.indexOf('menu-mobile-open') > -1) {
+				burgerMenu.className = className.replace(' menu-mobile-open', '');
+				return;
+			};
+
+			burgerMenu.className+= ' menu-mobile-open';
+		});
+
+	</script>
+
+</body>
+</html>
