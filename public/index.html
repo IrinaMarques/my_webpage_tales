@@ -2,26 +2,28 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+	<meta name='viewport' content='width=device-width' initial-scale='1.0' maximum-scale='1.0' user-scale='0'>
 	<title>Fantastic Tales - Scary Tales</title>
 	<link rel="stylesheet" href="css/styles.css">
+
 </head>
 <body>
 	<div class='wrap'>
 		<!-- por toggle e tirar para ver os estilos -->
 		<header role='banner' class='header-bar'> 
-			<div class='hamburguer'>
+			<div class='hamburger'>
 				<button id='burger' type='button' class='menu-mobile-btn'> 
-					<span class='hamburguer-bar'></span>
-					<span class='hamburguer-bar'></span>
-					<span class='hamburguer-bar'></span>
+					<span class='hamburger-bar'></span>
+					<span class='hamburger-bar'></span>
+					<span class='hamburger-bar'></span>
 				</button>
 			</div> 
 			
-			<nav id='burger-menu' role='navigation' class='menu menu-mobile-open'>
+			<nav id='burger-menu' role='navigation' class='menu'>
 				<ul class='menu-items'>
 					<li><a href="#">Work</a></li>
 					<li><a href="#">About</a></li>
-					<li><a href="#">Tales</a></li>
+					<li><a href="tales">Tales</a></li>
 					<li><a href="#">Contacts</a></li>
 				</ul>
 			</nav> 
@@ -33,16 +35,60 @@
 				<h1>Scary Tales</h1>
 			</div>
 			<div class='landing-footer'>
-				<p>Tales</p>
-				<!-- ICON -->
+				<a href="#tales"><p>Tales</p>
+				<span class="fa fa-sort-desc" aria-hidden="true"></span>
+				</a>
+			
 			</div>
 		</section>	
 
-
-		<section class='tales viewport100'>
+		<main role='main' class='tales' id='tales'>
+			<section class='main-section'>
+				<ul class='main-tales'>
+					<li>
+						<img src="img/1_bg.png" class='img-tales img-left'>
+						<div class='text text-right'>
+							<h2>The Ghost Tree</h2> 
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque hic, culpa quo, itaque voluptas quae, rerum reprehenderit dolor neque ipsa nihil at explicabo sed recusandae. Et dignissimos impedit sed dolore!</p>
+						</div>
+					</li>
+				
+					<li>
+						<img src="img/2_bg.png" class='img-tales img-right'>
+						<div class='text text-left'>
+							<h2>The Flower of Life</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae cumque illum, dicta deleniti eum, quisquam exercitationem quas eveniet deserunt ea culpa ipsam! Distinctio in necessitatibus saepe, voluptatibus ducimus illo asperiores!</p>
+						</div>
+					</li>
+				
+					<li>
+						<img src="img/3_bg.png" class='img-tales img-left'>
+						<div class='text text-right'>
+							<h2>A Strange Visit</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure laudantium, possimus officia repellat cupiditate aliquid nihil dolores velit nulla odit ullam optio explicabo id consectetur, illum perspiciatis debitis iste doloribus.</p>
+						</div>
+					</li>
+				
+					<li>
+						<img src="img/4_bg.png" class='img-tales img-right'>
+						<div class='text text-left'>
+							<h2>The Girl with the Mask</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum excepturi, in neque aperiam vero placeat est saepe, odit, laudantium ex, quaerat adipisci reiciendis? Nam, magni quae quo, fugit vitae impedit?</p>
+						</div>
+					</li>
+				</ul>
+			</section>
+		</main>
+		<footer>
 			
-		</section>
+		</footer>
+
 	</div> <!-- end of wrap -->
+
+
+
+	<!-- FONT AWESOM -->
+	<script src="https://use.fontawesome.com/2e8135097d.js"></script>
 
 	<script>
 		var burger = document.getElementById('burger');
