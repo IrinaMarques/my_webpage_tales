@@ -138,6 +138,7 @@ nav {
 
 .main-tales h2 {
 	font-size: 2.5em;
+	margin: 10px 0;
 }
 
 .main-tales p {
@@ -226,6 +227,15 @@ nav {
 	.header-bar .menu li {
 		padding: 0;
 	}
+	.main-tales h2 {
+		font-size: 2em;
+		margin: 10px 0;
+	}
+	.main-tales p {
+		padding: 10px 15px;
+		line-height: 1.6em;
+		font-size: 1em;
+	}
 }
 
 @media (max-width: 768px) {
@@ -236,9 +246,17 @@ nav {
 		font-size: 1.7em;
 		padding-top: 5px;
 	}
-
 	.landing-footer {
 		font-size: 1.1em;
+	}
+	.main-tales h2 {
+		font-size: 1.3em;
+		margin: 3px 0;
+	}
+	.main-tales p {
+		padding: 3px 5px;
+		line-height: 1.4em;
+		font-size: 1em;
 	}
 }
 
@@ -260,19 +278,16 @@ nav {
 		padding: 20px 0;
 		display: block;	
 	}
-
 	.menu-items {
 		list-style: none;
 		background: #fff;
 		top: 45px;
 	}
-
 	.menu-items li {
 		margin: 42px 0;
 		background: #fff;
 		padding: 0;
 	}
-
 	.menu-items a {
 		text-decoration: none;
 		color: #000;
@@ -282,6 +297,30 @@ nav {
 	.menu-items a:hover {
 		border-bottom: 2px solid black;
 		transition: all 0.3s ease-in;
+	}
+	.main-tales li {
+		display: block;
+
+	}
+	.main-section .img-tales {
+		display: block;
+		width: 100%;
+	}
+	.main-section .text {
+		display: block;
+		padding: 40px;
+	}
+	.main-tales h2 {
+		font-size: 2.5em;
+		margin: 10px 0;
+	}
+	.main-tales p {
+		padding: 15px;
+		line-height: 1.6em;
+		font-size: 1.2em;
+	}
+	.text-float {
+		float: right;
 	}
 }
 
