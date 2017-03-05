@@ -13,8 +13,7 @@ body {
 	font-size: 16px;
 	margin: 0;
 	padding: 0;
-	min-width: 320px;
-	
+	min-width: 320px;	
 }
 
 h1 {
@@ -25,7 +24,7 @@ h1 {
 }
 
 nav {
-	padding-top: 1.5%;;
+	padding-top: 1.5%;
 	text-align: center;
 }
 
@@ -80,7 +79,7 @@ nav {
 	position: relative;
 	height: 100%;
 	overflow: hidden;
-	min-height: 500px;
+	min-height: 370px;
 	min-width: 320px;
 }
 
@@ -99,7 +98,7 @@ nav {
 .landing-footer {
 	font-size: 1.3em;
     position: absolute;
-    bottom: 10px;
+    bottom: 15px;
     left: 0;
     right: 0;
 }
@@ -116,42 +115,36 @@ nav {
 	transition: all 0.3s ease-in;
 }
 
+/* MAIN */
+
 .tales {
-	background: blue;
+	position: absolute;
 }
 
-/* MAIN */
 .main-tales li {
 	list-style-type: none;
-	margin-left:0px;
-	padding-left:0px;
-	display: inline-block;
+	margin-left: 0;
+	padding-left: 0;
+	display: table;
+	position: relative;
+	padding: 0; 
+	margin: 0;
 }
 
 .main-tales img {
-	width: 50%;
-	height: 50%;
+	width: 100%;
+	display: block;
 }
 
-.main-tales .img-left, .main-tales .text-left  {
-	width: 50%;
-	float: left;
-	box-sizing: border-box;
-}
-
-.main-tales .img-right, .main-tales .text-right {
-	width: 50%;
-	float: right;
-	box-sizing: border-box;
-}
-
-h2 {
+.main-tales h2 {
+	font-size: 2.5em;
 	margin: 0 auto;
 }
 
-.main-tales .text p, .text h2 {
-	display: block;
-	padding: 0; 	 
+.main-tales p {
+	padding: 20px 30px;
+	line-height: 1.6em;
+	font-size: 1.2em;
 }
 
 .main-section {
@@ -163,18 +156,31 @@ h2 {
 	margin: 0 auto;
 }
 
+.main-section .img-tales {
+	display: table-cell;
+	width: 50%;
+}
+
 .main-section .text {
-	padding: 50px;
+	display: table-cell;
+	vertical-align: middle;
 }
 
-.main-tales li {
-	position: relative;
+.first-tale {
+	background: #31bb31;
 }
 
-.main-tales .text {
-	display: inline-block;
+.second-tale {
+	background: #ff5100;
 }
 
+.third-tale {
+	background: #eed162;
+}
+
+.fourth-tale {
+	background: #ec364c;
+}
 
 /* ------ MEDIA QUERIES -------- */
 /* NAV DESKTOP */
