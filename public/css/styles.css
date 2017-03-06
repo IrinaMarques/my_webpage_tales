@@ -22,14 +22,15 @@ h1 {
 	margin: 0;
 	padding: 0; 
 }
-
+/* ------------------------- */
+/* LANDING PAGE */
 nav {
 	padding-top: 1.5%;
 	text-align: center;
 }
 
-/* BUTTON */
-.hamburger {
+/*Button*/
+.hamburger { 
 	display: none;
 	position: absolute;
     right: 50px;
@@ -68,6 +69,7 @@ nav {
 	position: absolute;
 }
 
+/* Full width and height */
 .wrap {
 	position: absolute;
 	width: 100%;
@@ -89,12 +91,14 @@ nav {
 	padding-top: 60px;
 }
 
+/* Center title in the landing page */ 
 .title {
 	position: relative;
     top: 50%;
     transform: translateY(-50%);
 }
 
+/* Tales anchor */ 
 .landing-footer {
 	font-size: 1.3em;
     position: absolute;
@@ -115,36 +119,10 @@ nav {
 	transition: all 0.3s ease-in;
 }
 
-/* MAIN */
-
+/* ------------------------- */
+/* MAIN CONTENT */
 .tales {
 	position: absolute;
-}
-
-.main-tales li {
-	list-style-type: none;
-	margin-left: 0;
-	padding-left: 0;
-	display: table;
-	position: relative;
-	padding: 0; 
-	margin: 0;
-}
-
-.main-tales img {
-	width: 100%;
-	display: block;
-}
-
-.main-tales h2 {
-	font-size: 2.5em;
-	margin: 10px 0;
-}
-
-.main-tales p {
-	padding: 20px 30px;
-	line-height: 1.6em;
-	font-size: 1.2em;
 }
 
 .main-section {
@@ -154,16 +132,45 @@ nav {
 .main-section ul {
 	padding: 0;
 	margin: 0 auto;
+	font-size: 0;
+}
+
+.main-tales li {
+	list-style-type: none;
+	display: inline-block;
+	position: relative;
+}
+
+.main-tales img {
+	width: 100%;
 }
 
 .main-section .img-tales {
-	display: table-cell;
+	display: inline-block;
 	width: 50%;
 }
 
-.main-section .text {
-	display: table-cell;
-	vertical-align: middle;
+.main-tales .text {
+	font-size: 18px;
+	display: inline-block;
+	width: 50%;
+	float: right;
+	padding-top: 3%;
+}
+
+.main-section .text-left {
+	float: left;
+}
+
+.main-tales h2 {
+	font-size: 2.5em;
+	margin: 5px 0;
+}
+
+.main-tales p {
+	padding: 20px;
+	line-height: 1.6em;
+	font-size: 1.2em;
 }
 
 .first-tale {
@@ -220,6 +227,17 @@ nav {
 	}
 }
 
+@media (max-width: 1110px) {
+	.main-tales .text {
+		padding-top: 2%;
+	}
+	.main-tales p {
+		padding: 10px 15px;
+		line-height: 1.6em;
+		font-size: 1.1em;
+	}
+}
+
 @media (max-width: 961px) {
 	h1 {
 		font-size: 7.5em;
@@ -227,13 +245,14 @@ nav {
 	.header-bar .menu li {
 		padding: 0;
 	}
+	.main-tales .text {
+		padding-top: 1%;
+	}
 	.main-tales h2 {
-		font-size: 2em;
-		margin: 10px 0;
+		font-size: 1.7em;
 	}
 	.main-tales p {
-		padding: 10px 15px;
-		line-height: 1.6em;
+		line-height: 1.2em;
 		font-size: 1em;
 	}
 }
@@ -249,14 +268,15 @@ nav {
 	.landing-footer {
 		font-size: 1.1em;
 	}
+	.main-tales .text {
+		padding: 0;
+	}
 	.main-tales h2 {
-		font-size: 1.3em;
-		margin: 3px 0;
+		font-size: 1.4em;
 	}
 	.main-tales p {
-		padding: 3px 5px;
-		line-height: 1.4em;
-		font-size: 1em;
+		padding: 0;
+		font-size: 0.9em
 	}
 }
 
@@ -299,28 +319,26 @@ nav {
 		transition: all 0.3s ease-in;
 	}
 	.main-tales li {
-		display: block;
-
+		width: 100%;
 	}
 	.main-section .img-tales {
-		display: block;
 		width: 100%;
 	}
 	.main-section .text {
-		display: block;
-		padding: 40px;
+		clear: both;
+	}
+	.main-section .text {
+		width: 100%;
+		padding-top: 2%;
 	}
 	.main-tales h2 {
-		font-size: 2.5em;
-		margin: 10px 0;
+		font-size: 2em;
+		margin: 5px 0;
 	}
 	.main-tales p {
-		padding: 15px;
+		padding: 10px 20px 20px 20px;
 		line-height: 1.6em;
 		font-size: 1.2em;
-	}
-	.text-float {
-		float: right;
 	}
 }
 
@@ -328,6 +346,18 @@ nav {
 	h1 {
 		font-size: 3em;
 		padding-top: 20px;
+	}
+	.main-tales .text {
+		padding-top: 0;
+	}
+	.main-tales h2 {
+		font-size: 1.7em;
+		margin: 2px 0;
+	}
+	.main-tales p {
+		padding: 5px;
+		line-height: 1.2em;
+		font-size: 1em;
 	}
 }
 
