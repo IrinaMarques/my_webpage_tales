@@ -83,6 +83,7 @@ nav {
 	overflow: hidden;
 	min-height: 370px;
 	min-width: 320px;
+	z-index: 1;
 }
 
 .landing-title {
@@ -122,13 +123,10 @@ nav {
 /* ------------------------- */
 /* MAIN CONTENT */
 .tales {
-	position: absolute;
+	margin-bottom: 220px;
+	z-index: 1;
+	position: relative;
 }
-
-.main-section {
-	position: relative
-}
-
 .main-section ul {
 	padding: 0;
 	margin: 0 auto;
@@ -139,7 +137,6 @@ nav {
 	list-style-type: none;
 	display: inline-block;
 	position: relative;
-
 }
 
 .main-tales img {
@@ -204,7 +201,45 @@ nav {
 
 .fourth-tale {
 	background: #ec364c;
+	position: relative;
 }
+/* --------------------------*/
+/* FOOTER */
+.footer-section {
+	background: #000;
+}
+
+footer {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+}
+
+footer .row {
+	padding-top: 3%;
+	padding-bottom: 2%;
+	width: 100%;
+	font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	font-weight: 400;
+} 
+
+footer .column {
+	display: inline-block;
+	padding-top: 10px;
+	width: 30%;
+}
+
+hr {
+	width:5%;
+}
+
+footer .social-row {
+	padding-top: 2%;
+	padding-bottom: 3%;
+}
+
+
 
 /* ------ MEDIA QUERIES -------- */
 /* NAV DESKTOP */
@@ -213,7 +248,7 @@ nav {
 		width: 100%;
 		height: 7%;
     	background: #000; 
-    	z-index: 1;
+    	z-index: 2;
     	position: absolute;   
 	}
 	.header-bar .menu ul {
@@ -299,7 +334,6 @@ nav {
 		letter-spacing: 0;
 		padding-top: 0;
 	}
-	
 	.header-bar .menu ul {
 		display: none;
 	}
