@@ -139,15 +139,32 @@ nav {
 	list-style-type: none;
 	display: inline-block;
 	position: relative;
+
 }
 
 .main-tales img {
 	width: 100%;
+	opacity: 0.7;
 }
 
 .main-section .img-tales {
 	display: inline-block;
 	width: 50%;
+	overflow: hidden;
+}
+
+.main-tales img:hover {
+	opacity: 1;
+	-webkit-transition: all 0.7s linear;
+    -moz-transition: all 0.7s linear;
+    -o-transition: all 0.7s linear;
+    -ms-transition: all 0.7s linear;
+    transition: all 0.7s linear;
+	-webkit-transform: scale(1.20,1.20);
+    -moz-transform: scale(1.20,1.20);
+    -o-transform: scale(1.20,1.20);
+    -ms-transform: scale(1.20,1.20);
+    transform: scale(1.20,1.20);
 }
 
 .main-tales .text {
@@ -199,12 +216,10 @@ nav {
     	z-index: 1;
     	position: absolute;   
 	}
-
 	.header-bar .menu ul {
 		margin: 0 auto;
 		padding: 0;
 	}
-
 	.header-bar .menu li {
 		list-style: none;
 		display: inline;
@@ -212,7 +227,6 @@ nav {
 		margin: 0 25px;
 		padding: 0 15px;
 	}
-
 	.header-bar .menu a {
 		color: #fff;
 		text-decoration: none;
@@ -220,7 +234,6 @@ nav {
 		display: inline-block;
 		font-size: 2em;	
 	}
-
 	.header-bar .menu a:hover {
 		border-bottom: 2px solid white;
 		transition: all 0.3s ease-in;
