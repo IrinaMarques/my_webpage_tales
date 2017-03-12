@@ -25,7 +25,7 @@ h1 {
 /* ------------------------- */
 /* LANDING PAGE */
 nav {
-	padding-top: 1.5%;
+	/*padding-top: 1.5%;*/
 	text-align: center;
 }
 
@@ -218,7 +218,7 @@ footer {
 }
 
 footer .row {
-	padding: 2% 0;
+	padding: 25px 0;
 	width: 100%;
 	font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
 	font-weight: 400;
@@ -237,11 +237,11 @@ footer .column a {
 }
 
 hr {
-	width: 7%;
+	width: 5%;
 }
 
 footer .social-row {
-	padding: 1%;
+	padding: 5px;
 	font-size: 28px;
 }
 
@@ -277,10 +277,10 @@ footer .social-row .fa {
 		border-bottom: 2px solid transparent;
 		display: inline-block;
 		font-size: 2em;	
+		transition: all 0.3s ease-in;
 	}
 	.header-bar .menu a:hover {
 		border-bottom: 2px solid white;
-		transition: all 0.3s ease-in;
 	}
 }
 
@@ -336,14 +336,19 @@ footer .social-row .fa {
 		font-size: 0.9em
 	}
 	.tales{
-		margin-bottom: 500px;
+		margin-bottom: 370px;
 	}
 	footer {
-		height: 450px;
+		height: 300px;
 	}
+	footer .row {
+		padding: 0;
+	} 
+
 	footer .column {
 		width: 100%;
-		margin: 6% auto; 
+		margin: 0 auto;
+		padding-bottom: 10px;  
 		display: block;
 	}
 }	
@@ -356,9 +361,16 @@ footer .social-row .fa {
 	}
 	.header-bar .menu ul {
 		display: none;
+		margin: 0;
+    	padding: 0;
+	}
+	.landing-title {
+		margin: 0;
+		padding: 0; 
 	}
 	.hamburger {
 		display: block;
+		z-index: 2;
 	}
 	.menu-mobile-open ul.menu-items {
 		position: relative;
@@ -368,10 +380,10 @@ footer .social-row .fa {
 	.menu-items {
 		list-style: none;
 		background: #fff;
-		top: 45px;
+		/*top: 45px; */
 	}
 	.menu-items li {
-		margin: 42px 0;
+		/*margin: 42px 0;*/
 		background: #fff;
 		padding: 0;
 	}
