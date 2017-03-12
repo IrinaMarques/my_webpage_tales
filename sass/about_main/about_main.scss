@@ -1,0 +1,87 @@
+.tales {
+	margin-bottom: 250px;
+	z-index: 1;
+	position: relative;
+}
+.main-section ul {
+	padding: 0;
+	margin: 0 auto;
+	font-size: 0;
+
+	.img-tales {
+		display: inline-block;
+		width: 50%;
+		overflow: hidden;
+	}
+
+}
+
+.main-tales li {
+	list-style-type: none;
+	display: inline-block;
+	position: relative;
+
+	.text {
+		font-size: 18px;
+		display: inline-block;
+		width: 50%;
+		float: right;
+		padding-top: 3%;
+	}
+	
+	.text-left {
+		float: left;
+	}
+
+	&.first-tale {
+	background: #31bb31;
+	}
+
+	&.second-tale {
+	background: #ff5100;
+	}
+
+	&.third-tale {
+	background: #eed162;
+	}
+	
+	&.fourth-tale {
+	background: #ec364c;
+	position: relative;
+	}
+
+	img {
+		width: 100%;
+		opacity: 0.7;
+		
+		&:hover {
+			opacity: 1;
+			-webkit-transition: all 0.7s linear;
+    		-moz-transition: all 0.7s linear;
+		    -o-transition: all 0.7s linear;
+		    -ms-transition: all 0.7s linear;
+		    transition: all 0.7s linear;
+			-webkit-transform: scale(1.20,1.20);
+		    -moz-transform: scale(1.20,1.20);
+		    -o-transform: scale(1.20,1.20);
+		    -ms-transform: scale(1.20,1.20);
+		    transform: scale(1.20,1.20);
+		}
+	}	
+	
+	h2 {
+		font-size: 2.5em;
+		margin: 5px 0;
+	}
+
+	p {
+		padding: 20px;
+		line-height: 1.6em;
+		font-size: 1.2em;
+	}
+}
+
+
+
+
+

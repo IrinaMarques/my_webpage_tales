@@ -1,0 +1,35 @@
+.join-form {
+  margin-top: -70px;
+  padding-top: 70px; }
+
+.container {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.panel {
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+  height: 500px;
+  background: #fff;
+  display: inline-block; }
+  .panel .panel-title {
+    position: absolute;
+    width: 40%;
+    left: 0;
+    top: 40%;
+    -webkit-transform: translateY(-40%);
+    transform: translateY(-40%);
+    color: #000; }
+    .panel .panel-title h3 {
+      font-size: 2em;
+      margin: 0; }
+    .panel .panel-title p {
+      font-size: 1.2em; }
+    .panel .panel-title .form {
+      position: absolute;
+      width: 60%;
+      color: #000;
+      height: 100%; }

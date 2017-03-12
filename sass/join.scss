@@ -1,0 +1,47 @@
+@import '_variables.scss';
+
+.join-form {
+	margin-top: -($header-height);
+	padding-top: $header-height;
+}
+
+.container {
+	position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+} 
+
+.panel {
+	position: relative;
+	width: 60%;
+	margin: 0 auto;
+	height: 500px; 
+	background: #fff;
+	display: inline-block;
+
+	.panel-title {
+		position: absolute;
+		width: 40%;
+		left: 0;
+		top: 40%;
+    	transform: translateY(-40%);
+    	color: #000;
+
+    	h3 {
+    		font-size: 2em;
+    		margin: 0;
+    	}
+
+    	p {
+    		font-size: 1.2em;
+    	}
+
+    	.form {
+			position: absolute;
+			width: 60%;
+			color: #000;
+			height: 100%;
+		}
+	}
+}
+

@@ -1,7 +1,10 @@
+@import '_variables.scss';
+@import 'about_main/about_main.scss';
+
 .landing-title {
 	background: #000; /* COLOR */
-	margin-top: -70px;
-	padding-top: 70px;
+	margin-top: -($header-height);
+	padding-top: $header-height;
 }
 
 /* Center title in the landing page */ 
@@ -18,16 +21,16 @@
     bottom: 15px;
     left: 0;
     right: 0;
-}
-
-.landing-footer a {
-	text-decoration: none;
-	color: #fff;
-}
-
-.landing-footer a:hover {
-	text-decoration: none;
-	color: #fff;
-	font-size: 1.35em;
-	transition: all 0.3s ease-in;
+	
+	a {
+		text-decoration: none;
+		color: #fff;
+	
+		&:hover {
+			text-decoration: none;
+			color: #fff;
+			font-size: 1.35em;
+			transition: all 0.3s ease-in;
+		}
+	}
 }
