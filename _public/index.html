@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name='viewport' content='width=device-width' initial-scale='1.0' maximum-scale='1.0' user-scale='0'>
+	<title>Fantastic Tales - Scary Tales</title>
+	<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+	<div class='wrap'>
+		<header role='banner' class='header-bar'> 
+			<div class='hamburger'>
+				<button id='burger' type='button' class='menu-mobile-btn'> 
+					<span class='hamburger-bar'></span>
+					<span class='hamburger-bar'></span>
+					<span class='hamburger-bar'></span>
+				</button>
+			</div> 
+			
+			<nav id='burger-menu' role='navigation' class='menu'>
+				<ul class='menu-items'>
+					<li><a href="index.html">About</a></li>
+					<li><a href="#tales">Tales</a></li>
+					<li><a href="files/join_us/join.html">Join Us</a></li>
+					<li><a href="#contacts">Contacts</a></li>
+				</ul>
+			</nav> 
+		</header>
+
+		<section class='landing-title viewport100'>	
+			<div class='title'>
+				<h1>Fantastic Tales</h1>
+				<h1>Scary Tales</h1>
+			</div>
+			<div class='landing-footer'>
+				<a href="#tales"><p>Tales</p>
+				<span class="fa fa-sort-desc" aria-hidden="true"></span>
+				</a>
+			
+			</div>
+		</section>	
+
+		<main role='main' class='tales' id='tales'>
+			<section class='main-section'>
+				<ul class='main-tales'>
+					<li class='first-tale'>
+						<div class='img-tales'>
+							<picture>
+								<source srcset="img/1_bg.png" media='(min-width: 768px)'>
+								<source srcset="img/1_md.png" media='(min-width: 600px)'>
+								<source srcset="img/1_sm.png" media='(min-width: 320px)'>
+								<img src='img/1_bg.png' alt='tree'>
+							 </picture>
+						</div>
+						<div class='text'>
+							<h2>The Ghost Tree</h2> 
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque hic, culpa quo, itaque voluptas quae, rerum reprehenderit dolor neque ipsa nihil at explicabo sed recusandae. Et dignissimos impedit sed dolore!</p>
+						</div>
+					</li>
+				
+					<li class='second-tale'>
+						<div class='img-tales'>
+							<picture>
+								<source srcset="img/2_bg.png" media='(min-width: 768px)'>
+								<source srcset="img/2_md.png" media='(min-width: 600px)'>
+								<source srcset="img/2_sm.png" media='(min-width: 320px)'>
+								<img src='img/2_bg.png' alt='flower'>
+							 </picture>
+						</div>
+						<div class='text text-left'>
+							<h2>The Flower of Life</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae cumque illum, dicta deleniti eum, quisquam exercitationem quas eveniet deserunt ea culpa ipsam! Distinctio in necessitatibus saepe, voluptatibus ducimus illo asperiores!</p>
+						</div>
+					</li>
+				
+					<li class='third-tale'>
+						<div class='img-tales'>
+							<picture>
+								<source srcset="img/3_bg.png" media='(min-width: 768px)'>
+								<source srcset="img/3_md.png" media='(min-width: 600px)'>
+								<source srcset="img/3_sm.png" media='(min-width: 320px)'>
+								<img src='img/3_bg.png' alt='mystic'>
+							 </picture>
+						</div>
+						<div class='text'>
+							<h2>A Strange Visit</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure laudantium, possimus officia repellat cupiditate aliquid nihil dolores velit nulla odit ullam optio explicabo id consectetur, illum perspiciatis debitis iste doloribus.</p>
+						</div>
+					</li>
+				
+					<li class='fourth-tale'>
+						<div class='img-tales'>
+							<picture>
+								<source srcset="img/4_bg.png" media='(min-width: 768px)'>
+								<source srcset="img/4_md.png" media='(min-width: 600px)'>
+								<source srcset="img/4_sm.png" media='(min-width: 320px)'>
+								<img src='img/4_bg.png' alt='girl with mask'>
+							</picture>
+						</div>
+						<div class='text text-left'>
+							<h2>The Girl with the Mask</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum excepturi, in neque aperiam vero placeat est saepe, odit, laudantium ex, quaerat adipisci reiciendis? Nam, magni quae quo, fugit vitae impedit?</p>
+						</div>
+					</li>
+				</ul>
+			</section>
+		</main>
+		<footer id='contacts'>
+			<section class='footer-section'>
+				<div class='row'>
+					<div class='column'>
+						<p>Stay in touch</p>
+						<a href="#">irinavpm.wbd@gmail.com</a>
+					</div>
+					<div class='column'>
+						<p>&copy; Experience Website</p>
+						<p>All rights reserved</p>
+					</div>
+					<div class='column'>
+						<p>Freelancer from</p>
+						<p>Portugal</p>
+					</div>
+				</div>	<!-- end row -->
+				<hr>
+				<div class='social-row'>
+					<i class="fa fa-facebook-square" aria-hidden="true"></i>
+					<i class="fa fa-pinterest-square" aria-hidden="true"></i>
+					<i class="fa fa-google-plus-square" aria-hidden="true"></i>
+				</div>
+			</section>
+			
+		</footer>
+
+	</div> <!-- end of wrap -->
+
+
+
+
+	<!-- FONT AWESOM -->
+	<script src="https://use.fontawesome.com/2e8135097d.js"></script>
+
+	<script>
+		var burger = document.getElementById('burger');
+		var burgerMenu = document.getElementById('burger-menu');
+
+		burger.addEventListener("click", function(){
+			var className = burgerMenu.className;
+
+			if(className.indexOf('menu-mobile-open') > -1) {
+				burgerMenu.className = className.replace(' menu-mobile-open', '');
+				return;
+			};
+
+			burgerMenu.className+= ' menu-mobile-open';
+		});
+
+	</script>
+
+</body>
+</html>

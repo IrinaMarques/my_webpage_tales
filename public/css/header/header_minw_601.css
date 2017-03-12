@@ -1,0 +1,31 @@
+.header-bar {
+  width: 100%;
+  height: 70px;
+  background: #000;
+  z-index: 2;
+  position: absolute;
+  padding-top: 20px;
+  box-sizing: border-box;
+  /* mantain the size */ }
+
+.header-bar .menu ul {
+  margin: 0 auto;
+  padding: 0; }
+
+.header-bar .menu li {
+  list-style: none;
+  display: inline-block;
+  background-color: #000;
+  margin: 0 25px;
+  padding: 0 15px; }
+
+.header-bar .menu a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  display: inline-block;
+  font-size: 2em;
+  transition: all 0.3s ease-in; }
+
+.header-bar .menu a:hover {
+  border-bottom: 2px solid white; }
