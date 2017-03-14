@@ -32,24 +32,36 @@
 				<div class='panel'>
 
 					<div class='panel-title'>
-						<h3>Join Us</h3>
-						<p>Let us know about you</p>
-					</div>	
+						<div class='panel-title-text'>
+							<h3>Join Us</h3>
+							<p>Let us know about you</p>
+						</div>	
+					</div>
+
 					<div class='form'>
 						<form>
-							<h4>First Name</h4>
-							<label></label>
-							<input type="name" name="">
+							<div class='form-line'>
+								<h4>First Name</h4>
+								<input type="text" name="firstname" class='form-control' id='first-name' placeholder="Name" aria-required='true' aria-invalid='false'>
+								<label id='firstname-error' class='error' for='first-name'></label>
+							</div>
+							
+							<div class='form-line'>
+								<h4>Last Name</h4>
+								<input type="text" name="lastname" class='form-control' id='last-name' placeholder="Last Name" aria-required='true' aria-invalid='false'>
+								<label id='firstname-error' class='error' for='last-name'></label>
+							</div>
 
-							<h4>Last Name</h4>
-							<label></label>
-							<input type="name" name="">
-
-							<h4>Email Name</h4>
-							<label></label>
-							<input type="email" name="">
-
+							<div class='form-line'>
+								<h4>Email</h4>
+								<input type="email" name="Email" class='form-control' id='e-mail' placeholder="Email" aria-required='true' aria-invalid='false'>
+								<label id='firstname-error' class='error' for='e-mail'></label>
+							</div>
+							
 						</form>
+					</div>
+					<div class='form-footer'>
+						<button type='button' class='btn btn-next'> Next step </button>
 					</div>
 				
 				</div>

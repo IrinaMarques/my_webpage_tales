@@ -1,6 +1,7 @@
 /* EQUAL TO ALL STYLES */
 @import '_variables.scss';
 @import 'header/header.scss';
+@import 'footer/footer.scss';
 @import url('https://fonts.googleapis.com/css?family=Sansita');
 
 body {
@@ -32,7 +33,6 @@ p {
 	width: 100%;
 	height: 100%;
 	background: black;
-	overflow-x: hidden;
 } 
 
 .viewport100 {
@@ -46,7 +46,10 @@ p {
 
 @media (min-width: 601px) {
 	@import 'header/header_minw_601.scss';
+}
 
+@media (min-width: 769px) {
+	@import 'header/header_minw_769.scss';
 }
 
 @media (max-width: 961px) {
@@ -59,6 +62,7 @@ p {
 
 @media (max-width: 768px) {
 	@import 'header/header_maxw_768.scss';
+	@import 'footer/footer_maxw_768.scss';
 
 	h1 {
 		font-size: 5.7em;

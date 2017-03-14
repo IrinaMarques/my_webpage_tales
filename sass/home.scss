@@ -1,5 +1,5 @@
 @import '_variables.scss';
-@import 'about_main/about_main.scss';
+@import 'home_main/home_main.scss';
 
 .landing-title {
 	background: #000; /* COLOR */
@@ -34,3 +34,26 @@
 		}
 	}
 }
+
+
+@media (max-width: 1110px) {
+	@import 'home_main/home_main_maxw_1110.scss';
+}
+
+@media (max-width: 961px) {
+	@import 'home_main/home_main_maxw_961.scss';
+}
+
+@media (max-width: 768px) {
+	@import 'home_main/home_main_maxw_768.scss';
+}
+
+@media (max-width: 600px) {
+	@import 'home_main/home_main_maxw_600.scss';
+}
+
+@media (max-width: 599px) {
+	@import 'home_main/home_main_maxw_599.scss';
+}
+
+
