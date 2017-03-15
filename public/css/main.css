@@ -7,7 +7,7 @@ nav {
 .hamburger {
   display: none;
   position: absolute;
-  right: 50px;
+  right: 30px;
   top: 20px;
   z-index: 2; }
   .hamburger .menu-mobile-btn:focus {
@@ -31,6 +31,9 @@ nav {
     .hamburger .hamburger-bar:last-child {
       top: 33px;
       position: absolute; }
+
+.menu-mobile-open .hamburger-bar {
+  background-color: black; }
 
 .footer-section {
   background: #000; }
@@ -139,7 +142,7 @@ p {
 @media (max-width: 768px) {
   .header-bar .menu li {
     padding: 0;
-    margin: 0 10px; }
+    margin: 0 25px; }
   .header-bar .menu a {
     font-size: 1.7em; }
   footer {
@@ -157,6 +160,9 @@ p {
     font-size: 1.1em; } }
 
 @media (max-width: 600px) {
+  .landing-title {
+    margin: 0;
+    padding: 0px; }
   .header-bar .menu ul {
     display: none;
     margin: 0;
@@ -167,24 +173,23 @@ p {
   .menu-mobile-open ul.menu-items {
     position: relative;
     padding: 20px 0;
-    display: block; }
+    display: block;
+    height: 500px; }
   .menu-items {
     list-style: none;
-    background: #fff;
-    /*top: 45px; */ }
-  .menu-items li {
-    /*margin: 42px 0;*/
-    background: #fff;
-    padding: 0; }
-  .menu-items a {
-    text-decoration: none;
-    color: #000;
-    display: inline-block;
-    border-bottom: 2px solid transparent; }
-  .menu-items a:hover {
-    border-bottom: 2px solid black;
-    -webkit-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in; }
+    background: #fff; }
+    .menu-items li {
+      background: #fff;
+      padding: 0; }
+      .menu-items li a {
+        text-decoration: none;
+        color: #000;
+        display: inline-block;
+        border-bottom: 2px solid transparent; }
+        .menu-items li a:hover {
+          border-bottom: 2px solid black;
+          -webkit-transition: all 0.3s ease-in;
+          transition: all 0.3s ease-in; }
   h1 {
     font-size: 4.6em;
     letter-spacing: 0;

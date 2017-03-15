@@ -28,17 +28,52 @@
 		</header>
 
 		<section class='join-form viewport100'>	
-			<div class='container'>
-				<div class='panel'>
+			<ul class='container'>
+
+				<li class='panel first-panel' style="display: none;">
 
 					<div class='panel-title'>
-						<div class='panel-title-text'>
+						<div class='panel-text'>
 							<h3>Join Us</h3>
 							<p>Let us know about you</p>
 						</div>	
 					</div>
 
 					<div class='form'>
+						<form>
+							<div class='form-line'>
+								<h4>First Name</h4>
+								<input type="text" name="firstname" class='form-control' id='first-name' placeholder="Name" aria-required='true' aria-invalid='false'>
+								<label id='firstname-error' class='error' for='first-name'></label>
+							</div>
+							<div class='form-line'>
+								<h4>Last Name</h4>
+								<input type="text" name="lastname" class='form-control' id='last-name' placeholder="Last Name" aria-required='true' aria-invalid='false'>
+								<label id='firstname-error' class='error' for='last-name'></label>
+							</div>
+							<div class='form-line'>
+								<h4>Email</h4>
+								<input type="email" name="Email" class='form-control' id='e-mail' placeholder="Email" aria-required='true' aria-invalid='false'>
+								<label id='firstname-error' class='error' for='e-mail'></label>
+							</div>
+						</form>
+					</div>
+					<div class='form-footer'>
+						<button type='button' class='btn btn-next'> Next step </button>
+					</div>
+				</li> <!-- end of first panel -->
+
+				<li class='panel second-panel' >
+
+					<div class='panel-title'>
+						<div class='panel-img'>
+							<img src='../img/avatar.png' class='avatar-img' id='avatar-picture'>
+							<input type="file" id="profiler-picture">	
+						</div>
+						<h4> Choose a Picture </h4>	
+					</div>
+
+					<div class='form-img'>
 						<form>
 							<div class='form-line'>
 								<h4>First Name</h4>
@@ -62,11 +97,11 @@
 					</div>
 					<div class='form-footer'>
 						<button type='button' class='btn btn-next'> Next step </button>
-					</div>
-				
-				</div>
-			</div>
+					</div> <!-- end form-footer -->
+				</li> <!-- end of second panel -->
+			</ul>
 		</section>
+
 	</div> <!-- end of wrap -->
 
 </body>
