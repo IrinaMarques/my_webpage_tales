@@ -1,0 +1,50 @@
+.panel {
+	width: 500px;
+	margin: 0 auto;
+	height: 450px; 
+	background: #fff;
+	display: inline-block;
+
+	.panel-title {
+		position: absolute;
+		width: 300px;
+		height: 300px; /**/
+		left: 100px; /**/
+		top: 0; /**/
+    	background: orange;
+    	-webkit-box-shadow: -2px 8px 48px -15px rgba(0,0,0,0.75);
+		-moz-box-shadow: -2px 8px 48px -15px rgba(0,0,0,0.75);
+		box-shadow: -2px 8px 48px -15px rgba(0,0,0,0.75);
+	}
+	
+    .form {
+		position: absolute;
+		height: 400px;
+		left: 0;
+		top: 0px;
+    	width: 500px;
+    	text-align: left;
+		
+		.form-line {
+
+			&:first-child {
+				margin-top: 125px;
+			}
+		}	
+	}
+	
+	.form-footer {
+
+		.btn-next {
+			left: 173px;
+			
+			&:focus {
+			outline: none;
+			}
+
+			&:active {
+				left: 174px;
+			}
+		} 
+	}
+}
