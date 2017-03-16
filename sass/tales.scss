@@ -1,2 +1,13 @@
 @import '_variables.scss';
 
+.landing-title {
+	background: #000; /* COLOR */
+	margin-top: -($header-height);
+	padding-top: $header-height;
+}
+
+.title {
+	position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
