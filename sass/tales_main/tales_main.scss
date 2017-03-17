@@ -1,0 +1,91 @@
+
+
+.tales-container {
+	position: relative;
+	display: inline-block;
+	width: 800px;
+	height: 380px;
+	margin: 75px 30px;
+    
+
+		
+	.tales-panel-text {
+		position: absolute;
+		z-index: 2;
+		width: 420px;
+		height: 250px;
+		background: #fff;
+		top: 50px;
+		-webkit-box-shadow: 10px 10px 37px -13px rgba(0,0,0,0.75);
+		-moz-box-shadow: 10px 10px 37px -13px rgba(0,0,0,0.75);
+		box-shadow: 10px 10px 37px -13px rgba(0,0,0,0.75);
+
+		h2 {
+			color: #000;
+			margin: 70px 0 40px;
+		}
+
+		p {
+			color: #000;
+			margin-top: 5px;
+		}
+	}
+
+	.tales-panel-img {
+
+		position: absolute;
+		z-index: 3;
+		width: 350px;
+		height: 350px;
+		left: 420px;
+		top: 0px;
+		-webkit-box-shadow: 7px 7px 37px -13px rgba(0,0,0,0.75);
+		-moz-box-shadow: 7px 7px 37px -13px rgba(0,0,0,0.75);
+		box-shadow: 7px 7px 37px -13px rgba(0,0,0,0.75);
+		
+		img {
+			width: 350px;
+			height: auto;
+			z-index: 3;
+		}
+
+	}
+
+    &:nth-child(2) .tales-background {
+		background: #c17247;
+	}
+
+	&:nth-child(3) .tales-background {
+		background: #a6eae6;
+	}
+
+	&:nth-child(4) .tales-background {
+		background: #fec271;
+	}
+
+	&:nth-child(5) .tales-background {
+		background: #cc8c97;
+	}
+
+	&:nth-child(6) .tales-background {
+		background: #beb0a5;
+	}
+
+	&:nth-child(7) .tales-background {
+		background: #d8414d;
+	}
+
+	&:nth-child(8) .tales-background {
+		background: #eae5d7;
+	}
+
+	.tales-background {
+		position: absolute;
+		z-index: 1;
+		width: 700px;
+		height: 250px;
+		left: 100px;
+		top: 130px;
+		background: #9ec0d0; 
+	}
+}

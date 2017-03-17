@@ -1,3 +1,58 @@
+.tales-container {
+  position: relative;
+  display: inline-block;
+  width: 800px;
+  height: 380px;
+  margin: 75px 30px; }
+  .tales-container .tales-panel-text {
+    position: absolute;
+    z-index: 2;
+    width: 420px;
+    height: 250px;
+    background: #fff;
+    top: 50px;
+    box-shadow: 10px 10px 37px -13px rgba(0, 0, 0, 0.75); }
+    .tales-container .tales-panel-text h2 {
+      color: #000;
+      margin: 70px 0 40px; }
+    .tales-container .tales-panel-text p {
+      color: #000;
+      margin-top: 5px; }
+  .tales-container .tales-panel-img {
+    position: absolute;
+    z-index: 3;
+    width: 350px;
+    height: 350px;
+    left: 420px;
+    top: 0px;
+    box-shadow: 7px 7px 37px -13px rgba(0, 0, 0, 0.75); }
+    .tales-container .tales-panel-img img {
+      width: 350px;
+      height: auto;
+      z-index: 3; }
+  .tales-container:nth-child(2) .tales-background {
+    background: #c17247; }
+  .tales-container:nth-child(3) .tales-background {
+    background: #a6eae6; }
+  .tales-container:nth-child(4) .tales-background {
+    background: #fec271; }
+  .tales-container:nth-child(5) .tales-background {
+    background: #cc8c97; }
+  .tales-container:nth-child(6) .tales-background {
+    background: #beb0a5; }
+  .tales-container:nth-child(7) .tales-background {
+    background: #d8414d; }
+  .tales-container:nth-child(8) .tales-background {
+    background: #eae5d7; }
+  .tales-container .tales-background {
+    position: absolute;
+    z-index: 1;
+    width: 700px;
+    height: 250px;
+    left: 100px;
+    top: 130px;
+    background: #9ec0d0; }
+
 .landing-title {
   background: #000;
   /* COLOR */
