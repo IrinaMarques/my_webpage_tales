@@ -1,5 +1,4 @@
 
-
 .tales-container {
 	position: relative;
 	display: inline-block;
@@ -8,7 +7,6 @@
 	margin: 75px 30px;
     
 
-		
 	.tales-panel-text {
 		position: absolute;
 		z-index: 2;
@@ -27,7 +25,8 @@
 
 		p {
 			color: #000;
-			margin-top: 5px;
+			margin-top: 5px; 
+			border-bottom: 1px solid #000;
 		}
 	}
 
@@ -48,7 +47,6 @@
 			height: auto;
 			z-index: 3;
 		}
-
 	}
 
     &:nth-child(2) .tales-background {
@@ -88,4 +86,9 @@
 		top: 130px;
 		background: #9ec0d0; 
 	}
+}
+
+body {
+	background: red;
+	
 }

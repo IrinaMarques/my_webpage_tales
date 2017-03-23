@@ -6,11 +6,11 @@ footer {
 	position: fixed;
 	width: 100%;
 	bottom: 0;
-	left: 0;
-	height: $footer-height;
+	left: 0;		
+	height: $footer-height;	
 	padding-top: 50px;
     box-sizing: border-box;
-		
+
 	.row {
 		padding: 25px 0;
 		width: 100%;
@@ -29,7 +29,7 @@ footer {
 			font-size: 18px;
 		}
 	}
-
+	
 	hr {
 		width: 5%;
 	}
