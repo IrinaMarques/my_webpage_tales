@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>Fantastic Tales - Scary Tales</title>
 	<link rel="stylesheet" href="../css/main.css">
 	<link rel="stylesheet" href="../css/tales.css">
@@ -223,24 +224,8 @@
 		</footer>
 	</div>	<!-- end of warp -->
 
-	<script src="https://use.fontawesome.com/2e8135097d.js"></script>
+	
 
-	<script>
-		var burger = document.getElementById('burger');
-		var burgerMenu = document.getElementById('burger-menu');
-
-		burger.addEventListener("click", function(){
-			var className = burgerMenu.className;
-
-			if(className.indexOf('menu-mobile-open') > -1) {
-				burgerMenu.className = className.replace(' menu-mobile-open', '');
-				return;
-			};
-
-			burgerMenu.className+= ' menu-mobile-open';
-		});
-
-	</script>
-
+	<script src='../js/burger.js'></script>
 </body>
 </html>

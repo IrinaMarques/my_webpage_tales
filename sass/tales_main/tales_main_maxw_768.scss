@@ -1,0 +1,36 @@
+.tales-container {
+	width: 475px;
+	height: 440px;
+	
+	.tales-panel-text {
+		height: 390px;
+		left: 99px;
+		top: 50px;
+		-webkit-box-shadow: 4px -1px 33px -5px rgba(0,0,0,0.75);
+		-moz-box-shadow: 4px -1px 33px -5px rgba(0,0,0,0.75);
+		box-shadow: 4px -1px 33px -5px rgba(0,0,0,0.75);
+
+		h2 {
+   			margin: 210px 0 30px;
+   		}
+	}
+
+	.tales-panel-img {
+		left: 145px;
+		top: 25px;
+
+		img {
+			width: 200px;
+			height: 200px;
+			-webkit-box-shadow: 1px 2px 33px -4px rgba(0,0,0,0.75);
+			-moz-box-shadow: 1px 2px 33px -4px rgba(0,0,0,0.75);
+			box-shadow: 1px 2px 33px -4px rgba(0,0,0,0.75);
+		}
+	}
+
+	.tales-background {
+		width: 345px;
+		height: 200px;
+		left: 70px;	
+	}
+}
