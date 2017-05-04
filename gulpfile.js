@@ -23,7 +23,7 @@ gulp.task('public', function () {
 
 gulp.task('sass', function() {
     gulp.src('./sass/*.scss')
-    	.pipe(wait(500))
+    	.pipe(wait(250))
     	.pipe(plumber({
     		errorHandler: function (error) {
     			var msg = JSON.stringify(error.message);
@@ -40,8 +40,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('watch', function(){
-	gulp.watch(['./public/**/*.*', '!./public/css/*.*'], ['public']);
-	gulp.watch('./sass/**/*.scss', ['sass']);
+	gulp.watch(['./sass/**/*.scss', './public/**/*.*', '!./public/css/*.*'], ['sass']);
 });
 
 gulp.task('default', ['connect', 'watch']);

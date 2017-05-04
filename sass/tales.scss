@@ -12,3 +12,31 @@
     top: 50%;
     transform: translateY(-50%);
 }
+
+.landing-footer {
+	font-size: 2em;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+	
+	a {
+		text-decoration: none;
+		color: #fff;
+	
+		&:hover {
+			text-decoration: none;
+			color: #fff;
+			font-size: 1.2em;
+			transition: all 0.3s ease-in;
+		}
+	}
+}
+
+footer {
+	position: relative;
+}
+
+@media (max-width: 917px) {
+	@import 'tales_main/tales_main_maxw_917.scss';
+}

@@ -65,7 +65,7 @@
 
 /* Tales anchor */
 .landing-footer {
-  font-size: 1.3em;
+  font-size: 2em;
   position: absolute;
   bottom: 15px;
   left: 0;
@@ -76,7 +76,7 @@
     .landing-footer a:hover {
       text-decoration: none;
       color: #fff;
-      font-size: 1.35em;
+      font-size: 1.2em;
       -webkit-transition: all 0.3s ease-in;
       transition: all 0.3s ease-in; }
 

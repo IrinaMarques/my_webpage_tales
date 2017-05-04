@@ -27,17 +27,26 @@
 			</nav> 
 		</header>
 
-		<section class='viewport100'>	
+
+		<section class='landing-title viewport100'>	
 			<div class='title'>
 				<h1>Tales</h1>
 				<h2>Choose one or more categories</h2>
 			</div>
+			<div class='landing-footer'>
+				<a href="#categories"><p>More</p>
+				<span class="fa fa-sort-desc" aria-hidden="true"></span>
+				</a>
+			</div>
 		</section>
 
-		<section>
+
+		<section id='categories'>
 			<div class='tales-container'>
 				<div class='tales-panel-text'>
 					<h2>Fantastic Tales</h2>
+					<hr>
+					<hr>
 					<p>For those how like wonders.</p>
 				</div>
 				<div class='tales-panel-img'>
@@ -49,15 +58,14 @@
 					</picture>
 				</div>
 				<div class='tales-background bg1'>
-					
 				</div>
 			</div>
-		
-
 		
 			<div class='tales-container'>
 				<div class='tales-panel-text'>
 					<h2>Scary Tales </h2>
+					<hr>
+					<hr>
 					<p>Are you ready for read the most scary tales?</p>
 				</div>
 				<div class='tales-panel-img'>
@@ -69,15 +77,14 @@
 					</picture>
 				</div>
 				<div class='tales-background bg2'>
-					
 				</div>
 			</div>
-		
-
 		
 			<div class='tales-container'>
 				<div class='tales-panel-text'>
 					<h2>Beautiful Tales</h2>
+					<hr>
+					<hr>
 					<p>The most beautiful storys are here.</p>
 				</div>
 				<div class='tales-panel-img'>
@@ -89,15 +96,14 @@
 					</picture>
 				</div>
 				<div class='tales-background bg3'>
-					
 				</div>
 			</div>
-		
-
 		
 			<div class='tales-container'>
 				<div class='tales-panel-text'>
 					<h2>Horror Tales</h2>
+					<hr>
+					<hr>
 					<p>Be afraid! Prepare to not go to sleep at night. </p>
 				</div>
 				<div class='tales-panel-img'>
@@ -109,15 +115,14 @@
 					</picture>
 				</div>
 				<div class='tales-background bg4'>
-					
 				</div>
 			</div>
-		
-
 		
 			<div class='tales-container'>
 				<div class='tales-panel-text'>
 					<h2>Fary Tales</h2>
+					<hr>
+					<hr>
 					<p>Dream about princesses and princes and elves and fairies.</p>
 				</div>
 				<div class='tales-panel-img'>
@@ -129,15 +134,14 @@
 					</picture>
 				</div>
 				<div class='tales-background bg5'>
-					
 				</div>
 			</div>
-		
-
 		
 			<div class='tales-container'>
 				<div class='tales-panel-text'>
 					<h2>Historic Tales</h2>
+					<hr>
+					<hr>
 					<p>Stories of heroic wars and legendary facts.</p>
 				</div>
 				<div class='tales-panel-img'>
@@ -149,15 +153,14 @@
 					</picture>
 				</div>
 				<div class='tales-background bg6'>
-					
 				</div>
 			</div>
-		
-
 		
 			<div class='tales-container'>
 				<div class='tales-panel-text'>
 					<h2>Cultural Tales</h2>
+					<hr>
+					<hr>
 					<p>Several tales specific from some countrys.</p>
 				</div>
 				<div class='tales-panel-img'>
@@ -168,16 +171,15 @@
 						<img src="../img/cultural_bg.png">
 					</picture>
 				</div>
-				<div class='tales-background bg7'>
-					
+				<div class='tales-background bg7'>	
 				</div>
 			</div>
-		
-
 		
 			<div class='tales-container'>
 				<div class='tales-panel-text'>
 					<h2>Funny Tales</h2>
+					<hr>
+					<hr>
 					<p>For funny moments funny tales.</p>
 				</div>
 				<div class='tales-panel-img'>
@@ -189,11 +191,56 @@
 					</picture>
 				</div>
 				<div class='tales-background bg8'>
-					
 				</div>
 			</div>
 		</section>
+
+
+		<footer>
+			<section class='footer-section'>
+				<div class='row'>
+					<div class='column'>
+						<p>Stay in touch</p>
+						<a href="#">irinavpm.wbd@gmail.com</a>
+					</div>
+					<div class='column'>
+						<p>&copy; Experience Website</p>
+						<p>All rights reserved</p>
+					</div>
+					<div class='column'>
+						<p>Freelancer from</p>
+						<p>Portugal</p>
+					</div>
+				</div>	<!-- end row -->
+				<hr>
+				<div class='social-row'>
+					<i class="fa fa-facebook-square" aria-hidden="true"></i>
+					<i class="fa fa-pinterest-square" aria-hidden="true"></i>
+					<i class="fa fa-google-plus-square" aria-hidden="true"></i>
+				</div>
+			</section>
+			
+		</footer>
 	</div>	<!-- end of warp -->
+
+	<script src="https://use.fontawesome.com/2e8135097d.js"></script>
+
+	<script>
+		var burger = document.getElementById('burger');
+		var burgerMenu = document.getElementById('burger-menu');
+
+		burger.addEventListener("click", function(){
+			var className = burgerMenu.className;
+
+			if(className.indexOf('menu-mobile-open') > -1) {
+				burgerMenu.className = className.replace(' menu-mobile-open', '');
+				return;
+			};
+
+			burgerMenu.className+= ' menu-mobile-open';
+		});
+
+	</script>
 
 </body>
 </html>
