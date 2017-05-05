@@ -1,0 +1,34 @@
+.tales-container {
+	margin: 3px auto;
+	width: 100%;
+	height: 250px;
+
+	&:first-child {
+		margin-top: 50px;
+	}
+	
+	.tales-panel-text {
+		top: 30px;
+		width: 80%;
+		height: 200px;
+
+		h2 {
+   			margin: 40px 0 30px;
+   		}
+
+   		hr {
+   			margin-left: 25%;
+   			width: 50%;
+   		}
+	}
+
+	.tales-panel-img {
+		display: none;
+		
+	}
+
+	.tales-background {
+		margin: 0 auto;
+		width: 100%;	
+	}
+}

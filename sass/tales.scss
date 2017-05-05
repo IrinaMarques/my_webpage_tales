@@ -44,3 +44,11 @@ footer {
 @media (max-width: 768px) {
 	@import 'tales_main/tales_main_maxw_768.scss';
 }
+
+@media (max-width: 592px) {
+	@import 'tales_main/tales_main_maxw_592.scss';
+}
+
+@media (max-width: 480px) {
+	@import 'tales_main/tales_main_maxw_480.scss';
+}
