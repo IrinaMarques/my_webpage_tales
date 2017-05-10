@@ -1,0 +1,56 @@
+.banner {
+	width: 100%;
+	top: 0;
+	margin-top: 30px;
+
+	.title {
+		width: 100%;
+		left: 0;
+
+		h1 {
+			width: 95%;
+			font-size: 3.5em;
+			margin: 10px 0 0px 10px;
+		}
+
+		h2 {
+			font-size: 1em;
+			bottom: 85px;
+			margin: 10px 0 0px 10px;
+		}
+	}
+
+	.title-img {
+		top: 315px;
+		left: 0;
+		right: 0;
+		display: block;
+		margin: 0 auto;
+		
+		img {
+			width: 200px;	
+		}
+	}
+
+	.title-bg {
+		height: 150px;
+		width: 220px;
+		top: 375px; 
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+
+	.title-bg2 {
+		height: 315px;
+		width: 100%;
+		top: 115px; 
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		background: #9ec0d0;
+    	position: absolute;
+
+	}	
+}
+

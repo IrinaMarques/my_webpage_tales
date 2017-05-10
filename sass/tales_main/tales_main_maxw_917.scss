@@ -3,6 +3,11 @@
 	height: 380px;
 	margin: 50px;
 
+	&:hover {
+		top: 0;
+		left: 0;
+	}
+
 	.tales-panel-text {
 		width: 290px;
     	height: 300px;

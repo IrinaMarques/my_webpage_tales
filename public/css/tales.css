@@ -3,7 +3,14 @@
   display: inline-block;
   width: 800px;
   height: 380px;
-  margin: 50px; }
+  margin: 50px;
+  top: 0;
+  left: 0; }
+  .tales-container:hover {
+    top: 4px;
+    left: 4px;
+    -webkit-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in; }
   .tales-container .tales-panel-text {
     position: absolute;
     z-index: 2;
@@ -93,6 +100,9 @@ footer {
     width: 645px;
     height: 380px;
     margin: 50px; }
+    .tales-container:hover {
+      top: 0;
+      left: 0; }
     .tales-container .tales-panel-text {
       width: 290px;
       height: 300px;

@@ -4,6 +4,16 @@
 	width: 800px;
 	height: 380px;
 	margin: 50px;
+	top: 0;
+	left: 0;
+	
+
+	&:hover {
+		top: 4px;
+		left: 4px;
+		transition: all 0.1s ease-in;
+		
+	}
     
 	.tales-panel-text {
 		position: absolute;
@@ -88,8 +98,4 @@
 		top: 130px;
 		background: #9ec0d0; 
 	}
-}
-
-@media (max-width: 917px) {
-	
 }
