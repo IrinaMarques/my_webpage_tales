@@ -80,6 +80,73 @@
     .form-container button .fa {
       display: none; }
 
+.history-container {
+  display: inline-block;
+  margin: 0 auto;
+  width: 70%;
+  background: rgba(158, 192, 208, 0.24); }
+  .history-container .history-sg-container {
+    position: relative;
+    width: 25%;
+    height: 100%;
+    display: block;
+    float: left;
+    margin: 4%;
+    padding-bottom: 4%;
+    background: #9ec0d0; }
+    .history-container .history-sg-container .history-text {
+      position: relative;
+      width: 80%;
+      height: 380px;
+      background: white;
+      padding: 20px; }
+      .history-container .history-sg-container .history-text .history-title {
+        color: black; }
+      .history-container .history-sg-container .history-text .history-resume {
+        color: black; }
+        .history-container .history-sg-container .history-text .history-resume p {
+          padding: 10px; }
+      .history-container .history-sg-container .history-text .history-author {
+        position: absolute;
+        height: 9%;
+        bottom: 0;
+        left: 0;
+        background: #eee;
+        width: 100%; }
+        .history-container .history-sg-container .history-text .history-author hr {
+          width: 60%;
+          margin: 0;
+          margin-left: 39%;
+          border: none;
+          height: 1px;
+          background-color: rgba(0, 0, 0, 0.75); }
+        .history-container .history-sg-container .history-text .history-author .by-line {
+          color: black;
+          text-align: right;
+          font-size: 0.9em;
+          padding: 5px 7px; }
+          .history-container .history-sg-container .history-text .history-author .by-line address {
+            display: inline-block;
+            width: 30%;
+            color: black; }
+          .history-container .history-sg-container .history-text .history-author .by-line time {
+            color: black;
+            width: 30%; }
+        .history-container .history-sg-container .history-text .history-author .image-container {
+          position: relative;
+          top: -55px;
+          left: 20px;
+          width: 50px;
+          height: 50px;
+          background: white;
+          padding: 0; }
+          .history-container .history-sg-container .history-text .history-author .image-container img {
+            padding: 5px;
+            width: 40px;
+            height: 40px; }
+    .history-container .history-sg-container .social-icons .fa {
+      color: white; }
+
 @media (max-width: 968px) {
   .banner .title {
     height: 300px; }
