@@ -11,6 +11,14 @@
 	@import 'categories/fantastic_tales_banner_maxw_768.scss';
 }
 
+@media (max-width: 400px) {
+	@import 'categories/fantastic_tales_banner_maxw_480.scss';
+}
+
+@media (max-width: 480px) {
+	@import 'categories/fantastic_tales_banner_maxw_480.scss';
+}
+
 @media (max-width: 600px) {
 	@import 'categories/fantastic_tales_banner_maxw_600.scss';
 }
@@ -19,6 +27,23 @@
 	@import 'categories/fantastic_tales_banner_maxw_480.scss';
 }
 
+@media (max-width: 1357px) {
+	@import 'categories/fantastic_tales_main_maxw_1357.scss';
+}
+
+@media (max-width: 1189px) {
+	@import 'categories/fantastic_tales_main_maxw_1189.scss';
+}
+
+@media (max-width: 1060px) {
+	@import 'categories/fantastic_tales_main_maxw_1060.scss';
+}
+
 @media (max-width: 600px) {
 	@import 'categories/fantastic_tales_main_maxw_600.scss';
 }
+
+
+
+
+
