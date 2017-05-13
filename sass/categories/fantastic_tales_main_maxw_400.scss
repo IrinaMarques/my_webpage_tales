@@ -42,14 +42,14 @@
 			}
 
 			.history-resume {
-				min-height: 220px;
+				min-height: 245px;
 				height: 220px;
 
 				p {
-					padding: 10px;
+					font-size: 0.9em;
+					padding: 5px 10px;
 				}
 			}
-
 
 			.history-author {
 	    		height: 35px;
@@ -59,7 +59,7 @@
 				}
 
 				.by-line {
-					font-size: 0.8em;
+					font-size: 0.7em;
 					padding: 3px 0px;
 						
 					address {
@@ -90,16 +90,12 @@
 		}
 
 		.social-icons {
-			position: relative;
-			top: 0px;
-			margin: 3%;
-			font-size: 1.8em;
+			margin: 4%;
+			font-size: 1.5em;
 
 			.fa {
-				margin: 0 15px;
-				
+				margin: 0 25px;
 			}
-
 		}
 	}
 }

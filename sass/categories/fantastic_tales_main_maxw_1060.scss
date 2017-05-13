@@ -5,5 +5,25 @@
 	.history-sg-container {
 		width: 48%;
     	margin: 1%;
+
+    	.history-text {
+
+    		.history-resume {
+				color: black;
+				min-height: 200px;
+				height: 200px;
+				overflow: hidden;
+			}
+    	}
+
+    	.social-icons {
+			margin: 4%;
+
+			.fa {
+				margin: 0 25px;
+				color: white;
+				
+			}
+		}
 	}
 }

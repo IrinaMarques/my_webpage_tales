@@ -50,7 +50,6 @@
 				}
 			}
 
-
 			.history-author {
 	    		height: 35px;
 					 				
@@ -59,27 +58,13 @@
 				}
 
 				.by-line {
-					
 					font-size: 0.8em;
 					padding: 3px 0px;
-						
-					address {
-						display: inline-block;
-						color: black;
-					}
-
-					time {
-						color: black;
-					}
 				}
 
 				.image-container {
-					position: absolute;
-					top: -20px;
 					width: 40px;
 					height: 40px;
-					background: white;
-					padding: 0;
 
 					img {
 						padding: 3px;
@@ -91,16 +76,13 @@
 		}
 
 		.social-icons {
-			position: relative;
-			top: 0px;
 			margin: 3%;
-			font-size: 1.8em;
+			font-size: 1.5em;
 
 			.fa {
-				margin: 0 15px;
+				margin: 0 25px;
 				
 			}
-
 		}
 	}
 }
