@@ -1,0 +1,75 @@
+.wrap {
+  background-color: transparent;
+  display: table;
+  table-layout: fixed;
+  z-index: 1; }
+  .wrap .container {
+    display: table-cell;
+    width: 80%; }
+    .wrap .container .header-bar {
+      position: relative; }
+      .wrap .container .header-bar nav .menu-items li {
+        float: right; }
+        .wrap .container .header-bar nav .menu-items li:first-child {
+          float: left; }
+        .wrap .container .header-bar nav .menu-items li a {
+          border-bottom: 0; }
+      .wrap .container .header-bar nav .fa {
+        display: none; }
+
+.side-container {
+  position: fixed;
+  color: white;
+  width: 20%;
+  height: 100%;
+  background-color: black;
+  z-index: 2;
+  top: 0;
+  display: table-cell; }
+  .side-container .brand h2 {
+    margin: 0px auto;
+    padding: 30px 0;
+    font-size: 2em; }
+  .side-container .profile {
+    margin-top: 15px;
+    text-align: center; }
+    .side-container .profile .profile-img {
+      background: #fff;
+      border-radius: 50%;
+      width: 180px;
+      height: 180px;
+      margin: 25px 0 20px;
+      display: inline-block;
+      overflow: hidden; }
+      .side-container .profile .profile-img img {
+        width: 180px;
+        height: 180px; }
+    .side-container .profile h2 {
+      margin-bottom: 45px; }
+  .side-container .fa {
+    display: none; }
+  .side-container .li-style {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    .side-container .li-style li {
+      text-decoration: none;
+      position: relative;
+      z-index: 3;
+      font-size: 1.3em;
+      list-style-type: none;
+      padding: 7px 0;
+      border-color: #4a4a4a;
+      border-style: solid;
+      border-width: 1px 0; }
+      .side-container .li-style li:not(:first-child) {
+        margin-top: -1px; }
+      .side-container .li-style li:hover {
+        border-color: white;
+        z-index: 4; }
+      .side-container .li-style li a {
+        text-decoration: none;
+        color: white; }
+  .side-container .followers {
+    margin-top: 90px; }

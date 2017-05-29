@@ -3,7 +3,7 @@
 <head>
 	<title>Fantastic Tales - Scary Tales</title>
 	<link rel="stylesheet" href="../css/main.css">
-	<link rel="stylesheet" href="../css/join.css">
+	<link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
 
@@ -22,15 +22,52 @@
 					<li><a href="../index.html">Home</a></li>
 					<li><a href="#">About</a></li>
 					<li><a href="tales.html">Tales</a></li>
-					<li><a href="join.html">Join Us</a></li>
+					<li><a href="login.html">Login</a></li>
 				</ul>
 			</nav> 
 		</header>
 
 		<section class='join-form viewport100'>	
 			<ul class='container'>
+				
+				<!-- ZERO PANEL -->
+				<li class='zero-panel' id='login-or-signin'>
 
-				<li class='panel first-panel' id='first-panel'>
+				<div class='zero-panel-title'>
+					<div class='panel-text'>
+						<h3>Login</h3>
+					</div>	
+				</div>
+
+				<div class='zero-form'>
+					<form>
+						<div class='zero-form-line'>
+							<h4>Username</h4>
+							<input type="text" name="username" class='zero-form-control' id='username' placeholder="Your Username" aria-required='true' aria-invalid='false'>
+							<label id='username-error' class='error' for='username-name'></label>
+						</div>
+							
+						<div class='zero-form-line'>
+							<h4>Password</h4>
+							<input type="password" name="password" class='zero-form-control' id='profile-password' placeholder="Your Password" aria-required='true' aria-invalid='false'>
+							<label id='password-error' class='error' for='password'></label>
+						</div>
+						<div class='remember'>
+							<input type="checkbox" value='password' name="">
+							<span>Remember my password</span>
+						</div>
+						<p><a href="#">Forget your login?</a></p>
+						<p><a href="#">Forget your password?</a></p>
+						<p><a href="#" id='next1'>I don't have an account yet?</a></p>
+					</form>	
+				</div>
+					<div class='form-footer'>
+						<a href="dash.html" class='btn zero-btn-join'>Login</a>
+					</div> <!-- end form-footer -->
+				</li> <!-- end of zero panel -->
+
+				<!-- FIRST PANEL -->
+				<li class='panel first-panel' id='first-panel' style="display: none;">
 
 					<div class='panel-title'>
 						<div class='panel-text'>
@@ -38,7 +75,6 @@
 							<p>Let us know about you</p>
 						</div>	
 					</div>
-
 					<div class='form'>
 						<form>
 							<div class='form-line'>
@@ -59,10 +95,11 @@
 						</form>
 					</div>
 					<div class='form-footer'>
-						<button type='button' class='btn btn-next' id="next1"> Next step </button>
+						<button type='button' class='btn btn-next' id="next2"> Next step </button>
 					</div>
 				</li> <!-- end of first panel -->
-
+				
+				<!-- SECOND PANEL -->
 				<li class='panel second-panel' id='second-panel' style="display: none;">
 
 					<div class='panel-title'>
@@ -92,13 +129,26 @@
 								<input type="password" name="password" class='form-control form-control-img' id='e-mail' placeholder="Confirm Password" aria-required='true' aria-invalid='false'>
 								<label id='firstname-error' class='error' for='e-mail'></label>
 							</div>
-							
 						</form>
 					</div>
 					<div class='form-footer'>
-						<button type='button' class='btn btn-next' id="next2"> Next step </button>
+						<button type='button' class='btn btn-next' id="next3"> Finish </button>
+						<button type='button' class='btn btn-prev' id="prev"> Back </button>
 					</div> <!-- end form-footer -->
 				</li> <!-- end of second panel -->
+
+				<!-- THANK YOU PANEL -->
+				<li class='panel end-panel' id='third-panel' style="display: none;">
+
+					<div class='panel-title-end'>
+						<h2 class='panel-text'> Thank you for joining us </h2>	
+					</div>
+					<div class='form-end'>
+					</div>
+
+					
+				</li> <!-- end of second panel -->
+
 			</ul>
 		</section>
 
@@ -106,8 +156,10 @@
 
 	<script type="text/javascript">
 		var tabs = [
-			{container:'first-panel', next:'next1'}, 
-			{container:'second-panel', next:'next2', prev:''} //prev:'prev'
+			{container:'login-or-signin', next:'next1'}, 
+			{container:'first-panel', next:'next2'}, 
+			{container:'second-panel', next:'next3', prev:'prev'}, //prev:'prev'
+			{container:'third-panel'}
 		];
 		var next = function(evt) {
 			tabs.map(function(item, index) {

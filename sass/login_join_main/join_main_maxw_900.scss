@@ -5,6 +5,18 @@
 	background: #fff;
 	display: inline-block;
 
+
+	.panel-title-end{
+		position: absolute;
+    	width: 470px;
+    	height: 150px;
+    	left: 15px;
+    	top: 0;
+    	background: orange;
+    	box-shadow: -2px 8px 48px -15px rgba(0, 0, 0, 0.75);
+}
+	}
+
 	.panel-title {
 		position: absolute;
 		width: 300px;
@@ -31,20 +43,5 @@
 				margin-top: 125px;
 			}
 		}	
-	}
-	
-	.form-footer {
-
-		.btn-next {
-			left: 173px;
-			
-			&:focus {
-			outline: none;
-			}
-
-			&:active {
-				left: 174px;
-			}
-		} 
 	}
 }

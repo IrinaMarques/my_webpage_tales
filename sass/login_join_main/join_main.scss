@@ -6,34 +6,39 @@
 	background: #fff;
 	display: inline-block;
 
+
 	.panel-title {
 		position: absolute;
 		width: 300px;
 		height: 300px;
 		left: -100px;
 		top: 50%;
-    	transform: translateY(-50%);
-    	color: #000;
-    	background: orange;
+	    transform: translateY(-50%);
+	    color: #000;
+	  	background: orange;
     	-webkit-box-shadow: 16px 7px 18px -11px rgba(0,0,0,0.25);
 		-moz-box-shadow: 16px 7px 18px -11px rgba(0,0,0,0.25);
 		box-shadow: 16px 7px 18px -11px rgba(0,0,0,0.25);
-
+		
 		.panel-text {
 			color: #fff;
 			margin-top: 100px;
 
-    		h3 {
-    			font-size: 2em;
-    			margin: 0;
-    		}
+			h2 {
+				margin-top: 125px;
+			}
 
-    		p {
-    			font-size: 1.2em;
-    		}
-    	}
-	
-    	.panel-img { 
+	    	h3 {
+	    		font-size: 2em;
+	    		margin: 0;
+	    	}
+
+	    	p {
+	    		font-size: 1.2em;
+	    	}
+	    }
+		
+	    .panel-img { 
 			background: #fff;
 			border-radius: 50%;
 			width: 180px;
@@ -41,13 +46,13 @@
 			margin: 25px 60px 20px; 
 			display: inline-block;
 			overflow: hidden;
-		
+			
 			img {
 				width: 180px;
 				height: 180px;
 			}
-    	
-    		input[type='file'] {
+	    	
+	    	input[type='file'] {
 				cursor: pointer;
 				width: 100%;
 				height: 100%;
@@ -67,6 +72,7 @@
 		}
 	}
 	
+	
     .form {
 		position: absolute;
 		height: 400px;
@@ -74,6 +80,10 @@
 		top: 0px;
     	width: 500px;
     	text-align: left;
+
+    .form-end {
+
+    }
 		
 		.form-line {
 			width: 100%;
@@ -112,31 +122,16 @@
 		position: relative;
 		top: 400px;
 		height: 50px;
-
 		
-		button {
-			border-style: none;
-			border-radius: 5px;
-		}
-		
-		/* poderá ir para os estilos comuns */
-		.btn {
-			width: 100px;
-			height: 30px;
-		}
 
 		.btn-next {
 			background-color: #ffa500;
-			position: relative;
-			left: 280px;
+			position: absolute;
+    		right: 30px;
 			border: 2px solid #e29404;
-			-webkit-box-shadow: 12px 12px 14px -13px rgba(0,0,0,0.55);
-			-moz-box-shadow: 12px 12px 14px -13px rgba(0,0,0,0.55);
-			box-shadow: 12px 12px 14px -13px rgba(0,0,0,0.55);
-			transition: all 0.2s;
 			
 			&:focus {
-			outline: none;
+				outline: none;
 			}
 
 			&:active {
@@ -144,10 +139,14 @@
 				border: 2px solid #b97801;
 				background-color: #e4980c;
 				box-shadow: none;
-				left: 281px;
+				right: 29px;
 				top: 1px;
-
 			}
 		} 
+
+		.btn-prev {
+			position: absolute;
+    		left: 30px;
+		}
 	}
 }
