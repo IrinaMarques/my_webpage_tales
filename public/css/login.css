@@ -20,7 +20,6 @@
       color: #fff;
       margin-top: 100px; }
       .panel .panel-title .panel-text h2 {
-        color: white;
         margin-top: 125px; }
       .panel .panel-title .panel-text h3 {
         font-size: 2em;
@@ -101,6 +100,32 @@
     .panel .form-footer .btn-prev {
       position: absolute;
       left: 30px; }
+
+.end-panel {
+  position: relative;
+  width: 700px;
+  margin: 0 auto;
+  background: #fff;
+  display: inline-block;
+  height: 250px; }
+  .end-panel .panel-title-end {
+    position: absolute;
+    width: 470px;
+    height: 120px;
+    left: 115px;
+    top: -40px;
+    background: orange;
+    box-shadow: -2px 8px 48px -15px rgba(0, 0, 0, 0.75); }
+    .end-panel .panel-title-end hr {
+      width: 60%; }
+  .end-panel .form-end {
+    position: absolute;
+    text-align: center;
+    top: 130px;
+    width: 100%;
+    margin: 0 auto; }
+    .end-panel .form-end p {
+      color: black; }
 
 .zero-panel {
   position: relative;
@@ -218,6 +243,14 @@
     height: 450px;
     background: #fff;
     display: inline-block; }
+    .panel .panel-title-end {
+      position: absolute;
+      width: 470px;
+      height: 150px;
+      left: 15px;
+      top: 0;
+      background: orange;
+      box-shadow: -2px 8px 48px -15px rgba(0, 0, 0, 0.75); }
     .panel .panel-title {
       position: absolute;
       width: 300px;
@@ -237,7 +270,11 @@
       width: 500px;
       text-align: left; }
       .panel .form .form-line:first-child {
-        margin-top: 125px; } }
+        margin-top: 125px; }
+  .end-panel {
+    width: 500px; }
+    .end-panel .panel-title-end {
+      width: 275px; } }
 
 @media (max-width: 600px) {
   ul {
@@ -289,4 +326,9 @@
       .panel .form .form-control {
         display: block;
         margin: 0 auto;
-        width: 75%; } }
+        width: 75%; }
+  .end-panel {
+    width: 305px; }
+    .end-panel .panel-title-end {
+      width: 160px;
+      left: 75px; } }

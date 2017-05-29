@@ -6,7 +6,6 @@
 	background: #fff;
 	display: inline-block;
 
-
 	.panel-title {
 		position: absolute;
 		width: 300px;
@@ -71,8 +70,7 @@
 			letter-spacing: 1px;
 		}
 	}
-	
-	
+
     .form {
 		position: absolute;
 		height: 400px;
@@ -81,9 +79,7 @@
     	width: 500px;
     	text-align: left;
 
-    .form-end {
 
-    }
 		
 		.form-line {
 			width: 100%;
@@ -149,4 +145,41 @@
     		left: 30px;
 		}
 	}
+}
+
+.end-panel { 
+	position: relative;
+	width: 700px;
+	margin: 0 auto;
+	background: #fff;
+	display: inline-block;
+	height: 250px;
+
+	.panel-title-end {
+		position: absolute;
+    	width: 470px;
+    	height: 120px;
+    	left: 115px;
+    	top: -40px;
+    	background: orange;
+    	box-shadow: -2px 8px 48px -15px rgba(0, 0, 0, 0.75);
+
+    	hr {
+    		width: 60%;
+    		
+    	}
+	}
+
+	.form-end {
+		position: absolute;
+		text-align: center;
+		top: 130px;
+		width: 100%;
+		margin: 0 auto;
+    	
+    	p { 
+    		color: black;
+    	}
+
+    }
 }

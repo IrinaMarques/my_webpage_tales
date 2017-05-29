@@ -14,7 +14,7 @@
     	top: 0;
     	background: orange;
     	box-shadow: -2px 8px 48px -15px rgba(0, 0, 0, 0.75);
-}
+
 	}
 
 	.panel-title {
@@ -43,5 +43,13 @@
 				margin-top: 125px;
 			}
 		}	
+	}
+}
+
+.end-panel { 
+	width: 500px;
+
+	.panel-title-end {
+    	width: 275px;
 	}
 }
