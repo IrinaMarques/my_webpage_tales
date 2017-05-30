@@ -22,7 +22,7 @@
 				</div>
 				<div class='options'>
 					<ul class='li-style'>
-						<li>
+						<li class="active">
 							<a href="dash_profile.html">Edit my Profile</a>
 							<i class="fa fa-user-circle-o" aria-hidden="true"></i>
 						</li>
@@ -49,9 +49,11 @@
 					<ul class='li-style'>
 						<li>
 							<a href="dash_i_follow.html">Users I follow</a>
+							<i class="fa fa-heart" aria-hidden="true"></i>
 						</li>
 						<li>
 							<a href="dash_followers.html">My Followers</a>
+							<i class="fa fa-user-plus" aria-hidden="true"></i>
 						</li>
 					</ul>
 				</div>
@@ -86,38 +88,65 @@
 			<main>
 				<div class='main-container'>
 					<h2>Edit My Profile</h2>
-					<div class='profile-image-container'>
-						<div class='profile-image'>	
-							<img src='../../img/avatar.png' class='avatar-img' id='avatar-picture'>
-							<button class='btn button-upload'>
-								<a>Choose a image from your Pc</a>
-								<input type="file" class='btn' id="avatar-picture-upload">
-							</button>
-						</div>
-					</div>
+					
 					<form class='form-container'>
 						<div class='id-container'>
 							<div class='first-id-container'>
-								<h3>Your Real Name</h3>
-								<h3>Your Real Last Name</h3>
+								<h3>Name: User</h3>
+								<h3>Last Name: Lastname</h3>
+								<h3>Your Email: email@email.com</h3>
 							</div>
-							<div class='second-id-container'>
-								<h3>Your Display Name</h3>
-								<input type="name" name="">
-								<p>Change my name</p>
-								<h3>Your Display Last Name</h3>
-								<input type="name" name="">
-								<p>Change my last name</p>
+							<div class='profile-image-container'>
+								<div class='profile-image'>	
+									<img src='../../img/avatar.png' class='avatar-img' id='avatar-picture'>
+									<button class='btn button-upload'>Change image
+									<input type="file" class='btn' id="avatar-picture-upload">
+									</button>
+								</div>
 							</div>
+							<hr>
+							<div>
+								<h3>Change User Name</h3>
+								<div class='space'>
+									<h4>Name</h4>
+									<input type="name" name="">
+								</div>
+								<div class='space'>
+									<h4>Last Name</h4>
+									<input type="name" name="">
+								</div>
+								<br>
+								<button> Save </button>
+							</div>
+							<hr>
 							<div class='third-id-container'>
-								<h3>Your Email</h3>
+								<h3>Change Email</h3>
+								<h4> New Email </h4>
 								<input type="email" name="">
-								<p>Change email</p>
+								<br>
+								<button> Save </button>
 							</div>
+							<hr>
 							<div class='fourth-id-container'>
 								<h3>Security</h3>
-								<input type="password" name="">
-								<p>Change password</p>
+								<div class='space'>
+									<h4> Change Password </h4>
+									<input class='tooltip' type="password" name="">
+									<span class='tooltiptext'>Must contain letters and numbers</span>
+								</div>
+								<div class='space'>
+									<h4> Confirm Password </h4>
+									<input type="password" name="">
+								</div>
+								<br>
+								<button> Save </button>
+							</div>
+							<hr>
+							<div class='fifth-id-container'>
+								<h3>About me</h3>
+								<textarea rows='4'>This text is a simple biography about you.</textarea>
+								<br>
+								<button> Save </button>
 							</div>
 						</div>
 					</form>
