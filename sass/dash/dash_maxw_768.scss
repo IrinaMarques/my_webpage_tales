@@ -41,6 +41,16 @@
 
 	.profile {
 
+		.profile-img { 
+			width: 100px;
+			height: 100px;
+
+			img {
+				width: 100px;
+				height: 100px;
+			}
+		}
+
 		h2 {
 			font-size: 1.1em;
 		}
@@ -49,7 +59,7 @@
 	.li-style {
 
 		li {
-			font-size: 1.1em;
+			font-size: 1em;
 
 			a {
 				margin: 5px;

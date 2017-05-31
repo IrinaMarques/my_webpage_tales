@@ -1,60 +1,27 @@
-.wrap {
+.menu-mobile-open {
 
-	.container {
+	.header-bar {
 
-		.header-bar {
+		.menu {
 
-			nav {
+			ul {
+
+				li {
 				
-				.menu-items {
-
-					li {
-
-						&:first-child {
+					a{
+						span {
+							display: none;
 						}
 
-						a {
-							margin-bottom: 3px;
-							font-size: 1.4em;
+						.fa {
+							display: inline-block;
+							padding: 0 10px 0;
+							color: white;
+							font-size: 1.1em;
 						}
-					}
+					}	
 				}
-
-				.fa {
-					display: block;
-					
-				}	
-			}
-		}	
-	}
-}
-
-.side-container {
-
-	.brand {
-
-		h2 {
-			font-size: 1.5em;
+			}	
 		}
-
-	}
-
-	.profile {
-
-		h2 {
-			font-size: 1.1em;
-		}
-	}
-
-	.li-style {
-
-		li {
-			font-size: 1.1em;
-
-			a {
-				margin: 5px;
-				color: white;
-			}
-		}	
 	}
 }

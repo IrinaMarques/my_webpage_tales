@@ -145,6 +145,26 @@
 	@import 'dash/dash_maxw_768.scss';
 }
 
+@media (max-width: 600px) {
+	@import 'dash/dash_maxw_600.scss';
+}
+
+@media (max-width: 480px) {
+	@import 'dash/dash_maxw_480.scss';
+}
+
 @media (max-width: 1200px) {
 	@import 'dash/dash_profile_maxw_1200.scss';
+}
+
+@media (max-width: 768px) {
+	@import 'dash/dash_profile_maxw_768.scss';
+}
+
+@media (max-width: 600px) {
+	@import 'dash/dash_profile_maxw_600.scss';
+}
+
+@media (max-width: 480px) {
+	@import 'dash/dash_profile_maxw_480.scss';
 }

@@ -1,0 +1,72 @@
+.wrap {
+
+	.side-container {
+		/*display: none;*/
+	}
+}
+
+.main-container {
+
+	h2 {
+		font-size: 1.8em;
+	}
+	
+	.profile-image-container {
+		
+		.profile-image {
+			    margin-left: 20px;
+			
+			img {
+				width: 130px;
+			}	
+		}
+	}
+
+	.form-container {
+		padding: 0 0 0 40px;
+
+		.id-container {
+
+			.first-id-container {
+				margin: 35px 0;
+				transition: all 0.3s ease-in;
+			}
+
+			hr {
+    			margin: 15px 0 0 0;
+			}
+
+			h3 {
+				margin: 10px 0 5px 0;
+				font-size: 1.2em;
+			}
+
+			h4 {
+				font-size: 1em;
+			}
+
+			.space {
+				display: inline-block;
+				margin: 0 15px 0 0;
+
+				button {
+					margin-top: 13px;
+				}
+			}
+
+			.second-id-container {
+
+				button {
+					margin-top: 13px;
+				}
+			}
+
+			.fourth-id-container {
+
+				button {
+					margin-top: 13px;
+				}
+			}	
+		}
+	}
+}
