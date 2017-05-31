@@ -1,0 +1,60 @@
+.wrap {
+
+	.container {
+
+		.header-bar {
+
+			nav {
+				
+				.menu-items {
+
+					li {
+
+						&:first-child {
+						}
+
+						a {
+							margin-bottom: 3px;
+							font-size: 1.4em;
+						}
+					}
+				}
+
+				.fa {
+					display: block;
+					
+				}	
+			}
+		}	
+	}
+}
+
+.side-container {
+
+	.brand {
+
+		h2 {
+			font-size: 1.5em;
+		}
+
+	}
+
+	.profile {
+
+		h2 {
+			font-size: 1.1em;
+		}
+	}
+
+	.li-style {
+
+		li {
+			font-size: 1.1em;
+
+			a {
+				margin: 5px;
+				color: white;
+			}
+		}	
+	}
+}

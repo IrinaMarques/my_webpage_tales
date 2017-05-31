@@ -1,35 +1,26 @@
 .wrap {
-	background-color: transparent;
-	display: table;
-	table-layout: fixed;
-	z-index: 1;
 
 	.container {
-		display: table-cell;
-		width: 80%;
 
 		.header-bar {
-			position: relative;
+			padding-top: 13px;
 
 			nav {
 				
 				.menu-items {
 
 					li {
-						float: right;
-
-						&:first-child {
-							float: left;
-						}
 
 						a {
-							border-bottom: 0;
+							margin-bottom: 5px;
+							font-size: 1.5em;
 						}
 					}
 				}
 
 				.fa {
-					display: inline-block;
+					display: block;
+					
 				}	
 			}
 		}	
@@ -41,92 +32,58 @@
 	.brand {
 
 		h2 {
-			margin: 0px auto;
-			padding: 30px 0;
-			font-size: 1.7em;
+			font-size: 1.8em;
+			transition: all 0.3s ease-in;
 		}
-
 	}
 
 	.profile {
-		margin-top: 15px;
-		text-align: center;
 
 		.profile-img { 
-			background: #fff;
-			border-radius: 50%;
 			width: 120px;
 			height: 120px;
-			margin: 0 0 10px; 
-			display: inline-block;
-			overflow: hidden;
+			margin: 0 0 10px;
+			transition: all 0.3s ease-in;
 			
 			img {
 				width: 120px;
 				height: 120px;
+				transition: all 0.3s ease-in;
 			}
-
-
 		}
 
 		h2 {
-			margin-bottom: 45px;
+			margin-bottom: 35px;
+			font-size: 1.4em;
+			transition: all 0.3s ease-in;
 		}
-	}
-
-	.options {
-		
-		
 	}
 
 	.fa {
 		display: block;
-		margin: 5px; 
+		margin-top: 8px;
+		font-size: 1.2em; 
+
+		&:active, &.active, &:focus {
+			color: black;
+		}
 	}
 
 	.li-style {
-		display: block;
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
 
 		li {
-			text-decoration: none;
-			position: relative;
-			z-index: 3;
 			font-size: 1.1em;
-			list-style-type: none;
-			padding: 7px 0;
-			border-color: #4a4a4a;
-			border-style: solid;
-			border-width: 1px 0;
-				
-			&:not(:first-child) {
-				margin-top: -1px;
-			}
-		
-			&:hover {
-				border-color: white;
-				z-index: 4;
-			}
-
-			&:active {
-				background: grey;
-			}
-
-			&:focus {
-				background-color: grey;
-			}
-
+			
 			a {
 				margin: 5px;
 				color: white;
+				transition: all 0.3s ease-in;
 			}
 		}	
 	}
 
 	.followers {
-		margin-top: 90px;
+		margin-top: 80px;
 	
 	}
 }
